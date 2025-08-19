@@ -2,8 +2,39 @@
 title: "About"
 ---
 
-About this site
+The main aim of this project is to forecast retail and wholesale vegetable prices for two major economic centres in Sri Lanka—Dambulla and Pettah. These two markets serve as
+key distribution hubs for vegetables across the country. 
 
-```{r}
-1 + 1
-```
+
+## Significance of the project
+
+- Reduce food waste by optimizing supply chain efficiency through accurate price
+predictions.
+
+- Provide actionable insights for farmers, traders, and policymakers to improve
+decision-making processes, including crop selection, pricing strategies, and
+resource allocation.
+
+## Social Foundations Addressed by the Project Food
+
+**Food:** Food:  Price volatility affects vegetable affordability, reducing food security for various groups of population. Stable prices ensure better access to nutritious vegetables, promoting food security. 
+
+**Income & Work:**  Farmers face financial instability due to fluctuating prices and unpredictable demand.  An idea of future vegetable prices, enhancing income stability and reducing losses. 
+
+**Health:** Unstable vegetable prices limit access to essential nutrients, affecting overall health. Predictable prices encourage consistent consumption of vegetables, improving dietary health. 
+
+## Knowledge partner
+
+This research will collaborate with [International Water management Institute (IWMI)](https://www.iwmi.org/). The International Water Management Institute (IWMI) is an international research-fordevelopment (R4D) organization with offices in 15 countries and a global network of over ~200 scientists operating in 56 countries. IWMI is a member research centre of the CGIAR, a global research partnership for a food-secure future dedicated to reducing poverty, enhancing food and nutrition security, and improving natural resources management.
+
+### Link with the organisation and pathways to impact aspects of the project
+
+**Model Development:** Collaborate with IWMI to integrate environmental and irrigation data or their domain expertise knowledge into the forecasting model.  
+
+**Knowledge dissemination:** Disseminate project findings through workshops, dashboards, and reports, fostering awareness  
+
+**Feedback Loop:** Implement a feedback mechanism to refine the model based on real-world usage and outcome. 
+
+## Fundings
+
+Funding for this project is provided by the [International Institute of Forecasters](https://forecasters.org/) under the F4SG program in 2025

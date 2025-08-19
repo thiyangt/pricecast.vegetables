@@ -1,11 +1,6 @@
 ---
-title: "test"
+title: "Home"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+The main aim of this project is to forecast retail and wholesale vegetable prices for two major economic centres in Sri Lanka—Dambulla and Pettah. These two markets serve as
+key distribution hubs for vegetables across the country. 
