@@ -1,8 +1,11 @@
 project:
   type: website
+  output-dir: docs
+
 
 website:
   title: "Vegetable Price Forecasting for Petta and Dambulla Markets in Sri Lanka"
+  site-url: https://thiyangt.github.io/pricecast.vegetables/
   google-analytics: "G-2SZY4Y3LJQ"
   navbar:
     left:
