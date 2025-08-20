@@ -2,27 +2,46 @@
 title: "Activities, Outcomes and Progress"
 ---
 
-```{r}
-ID <- c("A1", "A2", "A3", "A4", "A5", "A6")
-Activities <- c("",
-                "",
-                "",
-                "",
-                "",
-                "")
-Progress <- c("",
-                "",
-                "",
-                "",
-                "",
-                "")
-Outcome <- c("",
-                "",
-                "",
-                "",
-                "",
-                "")
-df <- data.frame(ID, Activities,
-                 Progress, Outcome)
-df |> knitr::kable()
+The core emphasis of our project is on **in-depth analysis, open access to data and reproducibility**, and the **dissemination of information across different levels of society**.
+
+```{r, echo=FALSE}
+library(knitr)
+
+# Create dataframe
+activities <- data.frame(
+  Activity = c(
+    "A1: Data Collection and Data Cleaning",
+    "A2: Development of an Open-Source R Package",
+    "A3: Build User-Friendly Tools and Dashboards",
+    "A4: Develop a Forecast Model",
+    "A5: Development of a Website",
+    "A6: Collaboration with IWMI"
+  ),
+  Description = c(
+    "Web scraping to read data from the CBSL website (currently available in daily PDF files) and converting them into tidy format using reproducible code.",
+    "Converting the processed tidy data into an R package to enhance data accessibility for future research and policymaking in agriculture and market analysis.",
+    "Developing interactive dashboards and visualization tools to present forecast results for non-technical stakeholders.",
+    "Designing and implementing a forecast model for vegetable price forecasting.",
+    "Creating a project website to increase visibility and ensure sustainability of the project outcomes.",
+    "Disseminating project findings through workshops, dashboards, and reports to foster awareness and adoption of forecasting tools for sustainable market practices."
+  ),
+  Outcome = c(
+    "[R package for web scraping](https://github.com/thiyangt/vegscrapr)",
+    "[R package for loading data](https://github.com/thiyangt/vegetableSriLanka)",
+    "Dashboard of data visualizations",
+    "Publication in International Journal of Forecasting",
+    "Project website",
+    "Workshops, Reports, and a Video Clip"
+  ),
+  progress = c("Completed",
+                "Completed",
+                "WIP",
+                "WIP",
+                "WIP",
+                "WIP"),
+  stringsAsFactors = FALSE
+)
+
+# Print table with kable
+kable(activities, align = "l", caption = "Table 1: Project Activities, Outcomes and Progress")
 ```

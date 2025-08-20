@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -179,75 +145,55 @@ gtag('config', 'G-2SZY4Y3LJQ', { 'anonymize_ip': true});
 </header>
 
 
+<p>The core emphasis of our project is on <strong>in-depth analysis, open access to data and reproducibility</strong>, and the <strong>dissemination of information across different levels of society</strong>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ID <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A1"</span>, <span class="st">"A2"</span>, <span class="st">"A3"</span>, <span class="st">"A4"</span>, <span class="st">"A5"</span>, <span class="st">"A6"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Activities <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">""</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Progress <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">""</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Outcome <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">""</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                <span class="st">""</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(ID, Activities,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                 Progress, Outcome)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
+<caption>Table 1: Project Activities, Outcomes and Progress</caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;">ID</th>
-<th style="text-align: left;">Activities</th>
-<th style="text-align: left;">Progress</th>
+<th style="text-align: left;">Activity</th>
+<th style="text-align: left;">Description</th>
 <th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">progress</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">A1</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">A1: Data Collection and Data Cleaning</td>
+<td style="text-align: left;">Web scraping to read data from the CBSL website (currently available in daily PDF files) and converting them into tidy format using reproducible code.</td>
+<td style="text-align: left;"><a href="https://github.com/thiyangt/vegscrapr">R package for web scraping</a></td>
+<td style="text-align: left;">Completed</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">A2</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">A2: Development of an Open-Source R Package</td>
+<td style="text-align: left;">Converting the processed tidy data into an R package to enhance data accessibility for future research and policymaking in agriculture and market analysis.</td>
+<td style="text-align: left;"><a href="https://github.com/thiyangt/vegetableSriLanka">R package for loading data</a></td>
+<td style="text-align: left;">Completed</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">A3</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">A3: Build User-Friendly Tools and Dashboards</td>
+<td style="text-align: left;">Developing interactive dashboards and visualization tools to present forecast results for non-technical stakeholders.</td>
+<td style="text-align: left;">Dashboard of data visualizations</td>
+<td style="text-align: left;">WIP</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">A4</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">A4: Develop a Forecast Model</td>
+<td style="text-align: left;">Designing and implementing a forecast model for vegetable price forecasting.</td>
+<td style="text-align: left;">Publication in International Journal of Forecasting</td>
+<td style="text-align: left;">WIP</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">A5</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">A5: Development of a Website</td>
+<td style="text-align: left;">Creating a project website to increase visibility and ensure sustainability of the project outcomes.</td>
+<td style="text-align: left;">Project website</td>
+<td style="text-align: left;">WIP</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">A6</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">A6: Collaboration with IWMI</td>
+<td style="text-align: left;">Disseminating project findings through workshops, dashboards, and reports to foster awareness and adoption of forecasting tools for sustainable market practices.</td>
+<td style="text-align: left;">Workshops, Reports, and a Video Clip</td>
+<td style="text-align: left;">WIP</td>
 </tr>
 </tbody>
 </table>
