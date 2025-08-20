@@ -2,8 +2,27 @@
 title: "Activities, Outcomes and Progress"
 ---
 
-
 ```{r}
-ID <- c()
-
+ID <- c("A1", "A2", "A3", "A4", "A5", "A6")
+Activities <- c("",
+                "",
+                "",
+                "",
+                "",
+                "")
+Progress <- c("",
+                "",
+                "",
+                "",
+                "",
+                "")
+Outcome <- c("",
+                "",
+                "",
+                "",
+                "",
+                "")
+df <- data.frame(ID, Activities,
+                 Progress, Outcome)
+df |> knitr::kable()
 ```

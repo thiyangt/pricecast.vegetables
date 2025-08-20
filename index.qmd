@@ -2,5 +2,4 @@
 title: "Home"
 ---
 
-The main aim of this project is to forecast retail and wholesale vegetable prices for two major economic centres in Sri Lanka—Dambulla and Pettah. These two markets serve as
-key distribution hubs for vegetables across the country. 
+The main aim of this project is to forecast retail and wholesale vegetable prices for two major economic centres in Sri Lanka—Dambulla and Pettah. These two markets serve as key distribution hubs for vegetables across the country.
